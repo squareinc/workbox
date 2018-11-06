@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>workbox-window</title>
+  <script>self.process = self.process || {env: {NODE_ENV: 'dev'}};</script>
+</head>
+<body>
+  <p>You need to manually register sw.js</p>
+
+  <script type="module">
+
+
+  import {Workbox} from '../../../packages/workbox-window/Workbox.mjs';
+
+  (async() => {
+    // const wb = new Workbox('/test/scope/sw.js');
+    const wb = new Workbox('sw.js');
+
+    await wb.register();
+
+  })();
+  </script>
+</body>
+</html>

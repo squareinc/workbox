@@ -33,6 +33,7 @@ const gulpTaskFiles = [
   'build-node-packages',
   'build-browser-packages',
   'build-packages',
+  'build-window-packages',
   'build',
   'lint',
   'test-node',
